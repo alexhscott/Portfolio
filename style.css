@@ -1,0 +1,129 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+header {
+    background-color: beige;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    background-color: beige;
+    color: cadetblue;
+    padding: 10px 25px;
+    margin-left: 50px;
+    border: 1px solid cadetblue;
+}
+
+header nav {
+    display: flex;
+}
+
+nav a {
+    text-decoration: none;
+    color: cadetblue;
+    border: none;
+    margin-right: 20px;
+    padding: 10px 20px;
+}
+
+nav a:hover {
+    color: cadetblue;
+    font-weight: bold;
+    border-bottom: 2px solid cadetblue;
+}
+
+/* Get entire image to fit inside of hero */
+#hero {
+    background-image: url("./images/coastal.jpg");
+    min-height: 300px;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#hero h2 {
+    background: rgba(0, 0, 0, 0.0);
+    color: white;
+    display: inline;
+    position: absolute;
+    bottom: 10px;
+    right: 50px;
+    padding: 10px 25px;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: beige;
+}
+
+.section {
+    display: flex;
+}
+
+.section h2 {
+    border-right: 2px solid cadetblue;
+    flex: 20%;
+    padding: 10px;
+}
+
+#projects {
+    display: flex;
+    min-height: 200px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project {
+    background: rgba(0, 0, 0, 0.0);
+    border: 5px solid cadetblue;
+    flex-basis: 48%;
+    min-height: 200px;
+    margin: 5px;
+}
+
+.project:first-child {
+    flex-basis: 100%;
+    min-height: 400px;
+}
+
+#about {
+    display: flex;
+}
+
+.about-me {
+    width: 10%;
+    display: flex;
+    padding: 0px 25px;
+    flex-wrap: wrap;
+    float: left;
+}
+
+#about p {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: right;
+}
+
+.title {
+    border: 5px solid black;
+    margin-bottom: 0px;
+    display: flex;
+    padding: 10px 20px;
+    flex-direction: column;
+}
+
+#contact {
+    justify-content: center;
+    float: left;
+}
