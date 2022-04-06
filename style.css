@@ -42,7 +42,7 @@ nav a:hover {
 }
 
 /* Get entire image to fit inside of hero */
-#hero {
+.hero {
     background-image: url("./images/coastal.jpg");
     min-height: 300px;
     position: relative;
@@ -51,7 +51,7 @@ nav a:hover {
     background-size: cover;
 }
 
-#hero h2 {
+.hero h2 {
     background: rgba(0, 0, 0, 0.0);
     color: white;
     display: inline;
@@ -65,10 +65,24 @@ nav a:hover {
     margin-left: auto;
     margin-right: auto;
     background-color: beige;
+    display: flex;
+    flex-direction: column;
+}
+
+.border-right {
+    border-right: 2px solid black;
+    flex-grow: 2;
+}
+
+.info {
+    flex-grow: 4;
+    display: flex;
+    flex-direction: row;
 }
 
 .section {
     display: flex;
+    flex-direction: row;
 }
 
 .section h2 {
