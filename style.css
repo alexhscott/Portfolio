@@ -70,8 +70,12 @@ nav a:hover {
 }
 
 .border-right {
-    border-right: 2px solid black;
-    flex-grow: 2;
+    border-right: thick solid black;
+    width: 100px;
+}
+
+h2 {
+    flex: 1 1 100px;
 }
 
 .info {
@@ -80,64 +84,41 @@ nav a:hover {
     flex-direction: row;
 }
 
-.section {
+.flex-container {
     display: flex;
+}
+
+.flex-container-column {
+    flex-direction: column;
+}
+
+.flex-container-row {
     flex-direction: row;
 }
 
+.flex-wrap {
+    flex-wrap: wrap;
+}
 .section h2 {
     border-right: 2px solid cadetblue;
     flex: 20%;
     padding: 10px;
 }
 
-#projects {
-    display: flex;
-    min-height: 200px;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.project {
-    background: rgba(0, 0, 0, 0.0);
-    border: 5px solid cadetblue;
-    flex-basis: 48%;
-    min-height: 200px;
-    margin: 5px;
-}
-
-.project:first-child {
-    flex-basis: 100%;
-    min-height: 400px;
-}
-
-#about {
-    display: flex;
-}
-
-.about-me {
+.about-me-image {
     width: 10%;
-    display: flex;
     padding: 0px 25px;
-    flex-wrap: wrap;
-    float: left;
+
 }
 
-#about p {
-    display: flex;
-    flex-wrap: wrap;
-    text-align: right;
+.large-card {
+    padding: 2px 16px;
+    border: 2px solid black;
 }
 
-.title {
-    border: 5px solid black;
-    margin-bottom: 0px;
-    display: flex;
-    padding: 10px 20px;
-    flex-direction: column;
-}
-
-#contact {
-    justify-content: center;
-    float: left;
+.small-card {
+    padding: 10px;
+    border: 2px solid black;
+    justify-content: space-between;
+    flex: 1 100px;
 }
