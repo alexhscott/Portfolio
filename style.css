@@ -18,9 +18,9 @@ header {
 header h1 {
     background-color: beige;
     color: cadetblue;
-    padding: 10px 25px;
-    margin-left: 50px;
-    border: 1px solid cadetblue;
+    padding: 5px 15px;
+    margin-left: 75px;
+    border-bottom: 2px solid cadetblue;
 }
 
 header nav {
@@ -99,6 +99,7 @@ h2 {
 .flex-wrap {
     flex-wrap: wrap;
 }
+
 .section h2 {
     border-right: 2px solid cadetblue;
     flex: 20%;
